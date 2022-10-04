@@ -1,15 +1,18 @@
 <template>
   <ul>
-    <li v-for="resource in storedResources" :key="resource.id">
-      {{ resource }}
-    </li>
+    <learning-resource v-for="res in storedResources" :key="res.id">
+    </learning-resource>
   </ul>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import LearningResource from './components/learning-resources/LearningResource.vue';
 
 export default defineComponent({
+  components: {
+    LearningResource,
+  },
   data() {
     return {
       storedResources: [
