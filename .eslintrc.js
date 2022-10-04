@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 2020,
   },
   rules: {
-    'prettier/prettier': ['error', { singleQuote: true }],
+    'prettier/prettier': ['error', { endOfLine: 'auto', singleQuote: true }],
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
