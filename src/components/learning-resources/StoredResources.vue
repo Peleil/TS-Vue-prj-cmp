@@ -14,8 +14,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import LearningResource from './LearningResource.vue';
+
 export default defineComponent({
-  props: ['resources'],
+  inject: ['resources'],
   components: { LearningResource },
 });
 </script>
